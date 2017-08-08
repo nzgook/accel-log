@@ -1,7 +1,7 @@
 from time import sleep
 from smbus import SMBus
 import pymysql as SQL
-import LIST
+import LIST as LIS
 
 slaveADR = 0x18
 bus = SMBus(1)
@@ -73,6 +73,7 @@ console = """INSERT INTO EMPLOYEE(FIRST_NAME,
 LAST_NAME, AGE, SEX, INCOME)
 VALUES ("Max", "Cox", 26, "M", 65000)"""
 
+# sneak a change in here to test git. 
 try:
 # execute the concole command:
     db_object.execute(console)
