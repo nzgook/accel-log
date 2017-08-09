@@ -7,6 +7,7 @@
 from smbus import SMBus
 
 #Register address map
+# add this comment here for a git fetch test
 
 STATUS_REG_AUX = 0x07
 OUT_ADC1_L = 0x08
